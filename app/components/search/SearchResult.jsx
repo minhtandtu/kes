@@ -8,11 +8,10 @@ import { useState } from "react";
 
 export const SearchResult = ({ searchResult }) => {
   const [idxFull, setIdxFull] = useState();
-  console.log("idxFull: ", idxFull);
   return (
     <div>
       <p className="mt-4">Kết quả:</p>
-      <table className="min-w-full divide-y divide-gray-300 bg-gray-200 rounded-md text-gray-800">
+      <table className="min-w-full divide-y divide-gray-300 rounded-md bg-gray-200 text-gray-800">
         <thead>
           <tr>
             <th
@@ -53,7 +52,7 @@ export const SearchResult = ({ searchResult }) => {
               <tr key={index} className="divide-y divide-gray-300">
                 <td
                   scope="col"
-                  className="py-3.5 pl-2 text-left text-sm font-semibold text-gray-900 hidden lg:table-cell "
+                  className="hidden py-3.5 pl-2 text-left text-sm font-semibold text-gray-900 lg:table-cell "
                 >
                   {item.STT}
                 </td>
@@ -77,27 +76,31 @@ export const SearchResult = ({ searchResult }) => {
                 </td>
                 <td
                   scope="col"
-                  className="px-2 py-3.5 float-right text-sm font-semibold text-gray-900 "
+                  className="float-right px-2 py-3.5 text-sm font-semibold text-gray-900 "
                 >
                   {item.ANH && (
                     <div
                       className={`${
-                        idxFull == index ? " fixed inset-0 z-50" : "max-w-3xl"
+                        idxFull == index
+                          ? " fixed inset-0 z-50 "
+                          : " max-w-3xl "
                       }`}
                     >
-                      <div className="w-full relative cursor-pointer flex justify-center items-center h-full bg-gray-700/60">
+                      <div className=" relative flex h-full w-full cursor-pointer items-center justify-center bg-gray-700/60">
                         <Image
                           src={item.ANH}
                           alt={item.ANH}
                           width={5000}
                           height={2500}
                           className={` ${
-                            idxFull == index ? "w-[88%] " : " w-full "
-                          } border border-gray-300  rounded cursor-pointer  object-cover`}
+                            idxFull == index
+                              ? "  fixed h-full w-full rotate-90 md:w-[90%] md:rotate-0"
+                              : "  "
+                          } rounded object-cover `}
                         />
                         {idxFull == index && (
                           <div
-                            className="absolute top-12 left-28 p-3 bg-white/30 z-50"
+                            className="absolute top-12 left-28 z-50 bg-white/30 p-3"
                             onClick={() => setIdxFull(-1)}
                           >
                             <ArrowsPointingInIcon className="w-10 text-gray-700" />
@@ -105,7 +108,7 @@ export const SearchResult = ({ searchResult }) => {
                         )}
                         {idxFull != index && (
                           <div
-                            className="absolute top-5 left-5 p-3 bg-white/30"
+                            className="absolute top-5 left-5 bg-white/30 p-3"
                             onClick={() => setIdxFull(index)}
                           >
                             <ArrowsPointingOutIcon className="w-5 text-gray-700" />

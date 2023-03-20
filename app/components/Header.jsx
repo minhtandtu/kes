@@ -14,39 +14,39 @@ import Search from "./search/Search";
 
 const navigation = {
   categories: [
-    {
-      name: "Nội Thất Gỗ",
-      featured: [
-        {
-          name: "Tủ Quần Áo",
-          href: "#",
-          imageSrc: "../../images/tugomdf.png",
-          imageAlt:
-            "Models sitting back to back, wearing Basic Tee in black and bone.",
-        },
-        {
-          name: "Tủ Bếp",
-          href: "#",
-          imageSrc: "../../images/tubepmdf.png",
-          imageAlt:
-            "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
-        },
-        {
-          name: "Kệ TV",
-          href: "#",
-          imageSrc: "../../images/ketivi.png",
-          imageAlt:
-            "Model wearing minimalist watch with black wristband and white watch face.",
-        },
-        {
-          name: "Phụ Kiện",
-          href: "#",
-          imageSrc: "../../images/phukien.png",
-          imageAlt:
-            "Model opening tan leather long wallet with credit card pockets and cash pouch.",
-        },
-      ],
-    },
+    // {
+    //   name: "Nội Thất Gỗ",
+    //   featured: [
+    //     {
+    //       name: "Tủ Quần Áo",
+    //       href: "#",
+    //       imageSrc: "../../images/tugomdf.png",
+    //       imageAlt:
+    //         "Models sitting back to back, wearing Basic Tee in black and bone.",
+    //     },
+    //     {
+    //       name: "Tủ Bếp",
+    //       href: "#",
+    //       imageSrc: "../../images/tubepmdf.png",
+    //       imageAlt:
+    //         "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
+    //     },
+    //     {
+    //       name: "Kệ TV",
+    //       href: "#",
+    //       imageSrc: "../../images/ketivi.png",
+    //       imageAlt:
+    //         "Model wearing minimalist watch with black wristband and white watch face.",
+    //     },
+    //     {
+    //       name: "Phụ Kiện",
+    //       href: "#",
+    //       imageSrc: "../../images/phukien.png",
+    //       imageAlt:
+    //         "Model opening tan leather long wallet with credit card pockets and cash pouch.",
+    //     },
+    //   ],
+    // },
     {
       name: "Ván MDF & MFC",
       featured: [
@@ -85,27 +85,27 @@ const navigation = {
         {
           name: "Phòng Khách",
           href: "#",
-          imageSrc: "../../images/MDFMelamin.jpg",
+          imageSrc: "../../images/phoicanhlon.png",
           imageAlt:
             "Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.",
         },
         {
           name: "Bếp",
           href: "#",
-          imageSrc: "../../images/MDFRM.png",
+          imageSrc: "../../images/tubepmdf.png",
           imageAlt: "Model wearing light heather gray t-shirt.",
         },
         {
           name: "Phòng Ngủ",
           href: "#",
-          imageSrc: "../../images/MFCMelamin.jpg",
+          imageSrc: "../../images/bed-1.jpg",
           imageAlt:
             "Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.",
         },
         {
           name: "Nhà Ở",
           href: "#",
-          imageSrc: "../../images/MFCMR.jpg",
+          imageSrc: "../../images/phukien.png",
           imageAlt:
             "Model putting folded cash into slim card holder olive leather wallet with hand stitching.",
         },
@@ -290,7 +290,7 @@ const Header = () => {
               <div className="flex h-16 items-center justify-between">
                 {/* Logo (lg+) */}
                 <div className="hidden lg:flex lg:flex-1 lg:items-center">
-                  <a href="#">
+                  <a href="/">
                     <span className="sr-only">KES Wood Furniture</span>
                     <img
                       className="h-16 w-auto"
@@ -426,7 +426,7 @@ const Header = () => {
 
                   {/* Search */}
                   <a
-                    href="#"
+                    href="/mau-melamin"
                     className="ml-2 p-2 text-gray-400 hover:text-gray-500"
                   >
                     <span className="sr-only">Search</span>
@@ -438,13 +438,9 @@ const Header = () => {
                 </div>
 
                 {/* Logo (lg-) */}
-                <a href="#" className="lg:hidden">
+                <a href="/" className="lg:hidden">
                   <span className="sr-only">Your Company</span>
-                  <img
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt=""
-                    className="h-8 w-auto"
-                  />
+                  <img src="/images/logo.png" alt="" className="h-8 w-auto" />
                 </a>
 
                 <div className="flex flex-1 items-center justify-end ">

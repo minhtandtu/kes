@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { SearchResult } from "./SearchResult";
 export const SearchMaMelamin = ({ data }) => {
+  const firstInputRef = useRef(null);
   const [inputValue, setInputValue] = useState("");
   const [searchResult, setSearchResult] = useState([
     {
@@ -22,6 +23,9 @@ export const SearchMaMelamin = ({ data }) => {
     setInputValue(""); // clear the input field
   }
   useEffect(() => {
+    if (firstInputRef.current) {
+      firstInputRef.current.focus();
+    }
     const filteredData = data.filter((item) => {
       return Object.values(item).some((value) => {
         return value.toString().includes(inputValue);
@@ -55,6 +59,7 @@ export const SearchMaMelamin = ({ data }) => {
         </label>
         <div className="relative mt-2 flex items-center">
           <input
+            ref={firstInputRef}
             type="text"
             value={inputValue}
             onChange={handleChange}

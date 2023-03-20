@@ -11,7 +11,7 @@ import Sliders from "./components/sliders/Sliders";
 export default function Home() {
   return (
     <main>
-      <Categories></Categories>
+      {/* <Categories></Categories> */}
       {/* <Partners></Partners>
       <Phoicanh></Phoicanh>
       <Products></Products>

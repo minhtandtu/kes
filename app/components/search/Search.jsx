@@ -4,9 +4,12 @@ import React from "react";
 const Search = () => {
   return (
     <div>
-      <p className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block ">
+      <a
+        href="/mau-melamin"
+        className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block "
+      >
         <MagnifyingGlassIcon className="w-6 text-gray-500 cursor-pointer"></MagnifyingGlassIcon>
-      </p>
+      </a>
     </div>
   );
 };
