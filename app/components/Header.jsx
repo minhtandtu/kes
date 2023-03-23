@@ -85,14 +85,14 @@ const navigation = {
         {
           name: "Phòng Khách",
           href: "#",
-          imageSrc: "../../images/phoicanhlon.png",
+          imageSrc: "../../images/ketivi.png",
           imageAlt:
             "Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.",
         },
         {
-          name: "Bếp",
+          name: "Phòng Làm Việc",
           href: "#",
-          imageSrc: "../../images/tubepmdf.png",
+          imageSrc: "../../images/kesach.png",
           imageAlt: "Model wearing light heather gray t-shirt.",
         },
         {
@@ -266,7 +266,7 @@ const Header = () => {
         <nav aria-label="Top">
           {/* Top navigation */}
           <div className="bg-gray-900">
-            <div className="mx-auto flex h-10 max-w-7xl items-center justify-end just px-4 sm:px-6 lg:px-8">
+            <div className="just mx-auto flex h-10 max-w-7xl items-center justify-end px-4 sm:px-6 lg:px-8">
               <div className="flex items-center space-x-6">
                 <a
                   href="#"
@@ -294,7 +294,7 @@ const Header = () => {
                     <span className="sr-only">KES Wood Furniture</span>
                     <img
                       className="h-16 w-auto"
-                      src="../../images/logo.png"
+                      src="/images/logo.png"
                       alt=""
                     />
                   </a>
@@ -369,7 +369,7 @@ const Header = () => {
                                               <img
                                                 src={item.imageSrc}
                                                 alt={item.imageAlt}
-                                                className="object-cover object-center aspect-square"
+                                                className="aspect-square object-cover object-center"
                                               />
                                             </div>
                                             <a

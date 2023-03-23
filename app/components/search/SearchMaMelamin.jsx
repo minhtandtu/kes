@@ -1,48 +1,27 @@
 "use client";
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import { SearchResult } from "./SearchResult";
+import { SearchResult2 } from "./SearchResult2";
 export const SearchMaMelamin = ({ data }) => {
   const firstInputRef = useRef(null);
   const [inputValue, setInputValue] = useState("");
-  const [searchResult, setSearchResult] = useState([
-    {
-      STT: "",
-      MAAC: "",
-      NHOMGO: "",
-      KHUONAC: "",
-      GHICHU: "",
-      ANH: "",
-    },
-  ]);
+  const [searchResult, setSearchResult] = useState([]);
   function handleChange(event) {
     setInputValue(event.target.value); // update the input value in state
   }
   function handleSubmit(event) {
     event.preventDefault(); // prevent the default form submission behavior
-    setInputValue(""); // clear the input field
   }
   useEffect(() => {
     if (firstInputRef.current) {
       firstInputRef.current.focus();
     }
-    const filteredData = data.filter((item) => {
-      return Object.values(item).some((value) => {
-        return value.toString().includes(inputValue);
-      });
-    });
 
-    const filteredFields = filteredData.map((item) => {
-      const fields = {};
+    const result = data.filter((item) => item.MAAC.includes(inputValue));
 
-      Object.keys(item).forEach((key) => {
-        fields[key] = item[key];
-      });
-      return fields;
-    });
-
-    if (filteredFields && inputValue) {
-      setSearchResult(filteredFields);
+    console.log("Result: ", result);
+    if (result && inputValue) {
+      setSearchResult(result);
     } else {
       console.log("Không tìm thấy");
     }
@@ -67,8 +46,9 @@ export const SearchMaMelamin = ({ data }) => {
           />
         </div>
       </form>
-
-      <SearchResult searchResult={searchResult}></SearchResult>
+      {inputValue && (
+        <SearchResult2 searchResult={searchResult}></SearchResult2>
+      )}
     </div>
   );
 };

@@ -18,7 +18,7 @@ const tabs = [
 ];
 import { useState } from "react";
 import { SearchMaMelamin } from "../components/search/SearchMaMelamin";
-import { ListMelamin } from "../components/ListMelamin";
+import { ListMelamine } from "./ListMelamine";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -37,7 +37,7 @@ const page = () => {
                 tabNo == index
                   ? "border-indigo-500 text-indigo-600"
                   : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
-                "group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium cursor-pointer"
+                "group inline-flex cursor-pointer items-center border-b-2 py-4 px-1 text-sm font-medium"
               )}
               aria-current={tab.current ? "page" : undefined}
             >
@@ -55,7 +55,7 @@ const page = () => {
           ))}
         </div>
         <div className={`${tabNo == 1 ? "block" : "hidden"} `}>
-          <ListMelamin data={data} />
+          <ListMelamine data={data} />
         </div>
         <div className={`${tabNo == 0 ? "block" : "hidden"} py-4`}>
           <SearchMaMelamin data={data}></SearchMaMelamin>
