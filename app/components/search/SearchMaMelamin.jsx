@@ -19,11 +19,8 @@ export const SearchMaMelamin = ({ data }) => {
 
     const result = data.filter((item) => item.MAAC.includes(inputValue));
 
-    console.log("Result: ", result);
     if (result && inputValue) {
       setSearchResult(result);
-    } else {
-      console.log("Không tìm thấy");
     }
   }, [inputValue]);
 

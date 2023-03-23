@@ -5,7 +5,9 @@ import { useState } from "react";
 const SearchImage = ({ imageUrl, index }) => {
   const [isFull, setIsFull] = useState(false);
   return (
-    <div className={`${isFull ? " fixed inset-0 " : " "} bg-gray-700/70 p-4 `}>
+    <div
+      className={`${isFull ? " fixed inset-0 p-4 " : " "} bg-gray-700/70 p-0`}
+    >
       <Image
         src={imageUrl}
         alt="image"
