@@ -17,7 +17,12 @@ export const SearchMaMelamin = ({ data }) => {
       firstInputRef.current.focus();
     }
 
-    const result = data.filter((item) => item.MAAC.includes(inputValue));
+    const result = data.filter(
+      (item) =>
+        item.MAAC.includes(inputValue.toUpperCase()) ||
+        item.NHOMGO.includes(inputValue.toUpperCase()) ||
+        item.GHICHU.includes(inputValue.toUpperCase())
+    );
 
     if (result && inputValue) {
       setSearchResult(result);
