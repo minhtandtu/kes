@@ -97,7 +97,7 @@ function classNames(...classes) {
 const page = () => {
   const [tabNo, settabNo] = useState(0);
   return (
-    <div className="container mx-auto mt-4">
+    <div className="container mx-auto mt-4 max-w-7xl">
       <div className="border border-gray-300 p-4">
         <div className="flex space-x-6 overflow-x-auto scrollbar-hide">
           {tabs.map((tab, index) => (

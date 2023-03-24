@@ -3,6 +3,7 @@
 import React from "react";
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
+import Image from "next/image";
 import {
   Bars3Icon,
   MagnifyingGlassIcon,
@@ -255,15 +256,21 @@ const Header = () => {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex h-16 items-center justify-between">
                 {/* Logo (lg+) */}
-                <div className="hidden lg:flex lg:flex-1 lg:items-center">
-                  <a href="/">
+                <div className=" lg:flex lg:flex-1 lg:items-center">
+                  <Image
+                    src="/images/vanmelamin.jpg"
+                    width={400}
+                    height={100}
+                    className="h-16 object-cover"
+                  ></Image>
+                  {/* <a href="/">
                     <span className="sr-only">KES Wood Furniture</span>
                     <img
                       className="h-16 w-auto"
                       src="/images/logo.png"
                       alt=""
                     />
-                  </a>
+                  </a> */}
                 </div>
 
                 <div className="hidden h-full lg:flex">

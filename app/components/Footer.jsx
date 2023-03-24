@@ -68,7 +68,7 @@ const Footer = () => {
 
   return (
     <div className="mt-4 border border-gray-300">
-      <div className="container mx-auto ">
+      <div className="container mx-auto max-w-6xl ">
         <div className="flex flex-col justify-between py-12 px-6 md:flex-row lg:px-8 ">
           <div className="flex justify-center space-x-6 md:order-2">
             {navigation.map((item) => (
