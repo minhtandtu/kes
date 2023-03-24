@@ -265,24 +265,6 @@ const Header = () => {
       <header className="relative border-b border-gray-300 pb-2 md:pb-4">
         <nav aria-label="Top">
           {/* Top navigation */}
-          <div className="bg-gray-900">
-            <div className="just mx-auto flex h-10 max-w-7xl items-center justify-end px-4 sm:px-6 lg:px-8">
-              <div className="flex items-center space-x-6">
-                <a
-                  href="#"
-                  className="text-sm font-medium text-white hover:text-gray-100"
-                >
-                  Sign in
-                </a>
-                <a
-                  href="#"
-                  className="text-sm font-medium text-white hover:text-gray-100"
-                >
-                  Create an account
-                </a>
-              </div>
-            </div>
-          </div>
 
           {/* Secondary navigation */}
           <div className="bg-white">

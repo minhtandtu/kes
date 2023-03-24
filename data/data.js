@@ -2,26 +2,24 @@ export const data = [
   {
     STT: 1,
     MAAC: "MS 104",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-104-SH.jpg",
     KHUONAC: "SH",
     KHUONKES6: "SH",
     KHUONKES9: "SH",
-    GHICHU: "SMOOTH WHITE KHÔNG TRÙNG ",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-104",
+    GHICHU: "SMOOTH WHITE, KHÔNG TRÙNG ",
+    THONGTIN: " ",
   },
   {
     STT: 2,
     MAAC: "MS 101",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-101-MM.jpg",
     KHUONAC: "MM",
     KHUONKES6: "G",
     KHUONKES9: "T",
     GHICHU: " ",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-101",
+    THONGTIN: " ",
   },
   {
     STT: 3,
@@ -32,8 +30,8 @@ export const data = [
     KHUONKES6: "EV",
     KHUONKES9: "EV",
     GHICHU: "SANTANA OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-388",
+    THONGTIN:
+      "Có nhiều mắt gỗ to và nhỏ, có các vân núi chạy theo mắt gỗ, màu vàng",
   },
   {
     STT: 4,
@@ -44,8 +42,8 @@ export const data = [
     KHUONKES6: "EV",
     KHUONKES9: "EV",
     GHICHU: "SNUG WALNUT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-612",
+    THONGTIN:
+      "Có vân núi dạng nửa dẹt và chạy dài, nhìn giống có vết cưa dọc trên bề mặt, màu nâu sáng",
   },
   {
     STT: 5,
@@ -56,8 +54,7 @@ export const data = [
     KHUONKES6: "PL",
     KHUONKES9: "PL",
     GHICHU: "COLUMBIA WALNUT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-333",
+    THONGTIN: "Có mắt gỗ, có vân núi dạng nửa, màu nâu đỏ",
   },
   {
     STT: 6,
@@ -68,8 +65,8 @@ export const data = [
     KHUONKES6: "NWG",
     KHUONKES9: "NWG",
     GHICHU: "LYON WALNUT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-448",
+    THONGTIN:
+      "Có nhiều mắt gỗ to, trên bề mặt có 2 tông màu xen kẽ, có các đường nứt đen dài chạy qua mắt gỗ, các nét vân ngang uốn cong, màu vàng",
   },
   {
     STT: 7,
@@ -80,8 +77,7 @@ export const data = [
     KHUONKES6: "SMM",
     KHUONKES9: "SMM",
     GHICHU: "KITAMI RUESTER ELEGANT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-435",
+    THONGTIN: "Có những vân núi rời rạc, không có những đường đen, màu vàng",
   },
   {
     STT: 8,
@@ -90,20 +86,18 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-611-EV.jpg",
     KHUONAC: "EV",
     GHICHU: "KHÔNG TRÙNG ",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-611",
+    THONGTIN: " ",
   },
   {
     STT: 9,
     MAAC: "MS 230",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-230-PL.jpg",
     KHUONAC: "PL",
     KHUONKES6: "PL",
     KHUONKES9: "S",
     GHICHU: " ",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-230",
+    THONGTIN: " ",
   },
   {
     STT: 10,
@@ -114,8 +108,7 @@ export const data = [
     KHUONKES6: "WN",
     KHUONKES9: "WN",
     GHICHU: " ",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-630",
+    THONGTIN: "Vân ngang nét lớn ( nhuyễn ), màu vàng",
   },
   {
     STT: 11,
@@ -126,8 +119,7 @@ export const data = [
     KHUONKES6: "PL",
     KHUONKES9: "PL",
     GHICHU: "GỖ THÍCH",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-404",
+    THONGTIN: "Đường thể hiện vân gỗ màu trắng, vân núi dạng nửa, màu vàng nâu",
   },
   {
     STT: 12,
@@ -138,8 +130,7 @@ export const data = [
     KHUONKES6: "SH",
     KHUONKES9: "SH",
     GHICHU: "YELLOW MAPLE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-2165",
+    THONGTIN: "Có vân núi ( như đám mây ), màu vàng",
   },
   {
     STT: 13,
@@ -150,44 +141,41 @@ export const data = [
     KHUONKES6: "SL",
     KHUONKES9: "SL",
     GHICHU: "SONAMA OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-389",
+    THONGTIN:
+      "Có nhiều vết xước dọc màu trắng trên bề mặt, vân núi dạng nửa, màu vàng",
   },
   {
     STT: 14,
     MAAC: "MS 446",
-    NHOMGO: "VÂN VẢI",
+    NHOMGO: "VÂN VẢI-FABRIC",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-446-FR.jpg",
     KHUONAC: "FR",
     KHUONKES6: "FR",
     KHUONKES9: "FR",
     GHICHU: "JEAN",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-446",
+    THONGTIN: " ",
   },
   {
     STT: 15,
     MAAC: "MS 204",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-204-SH.jpg",
     KHUONAC: "SH",
     KHUONKES6: "SH",
     KHUONKES9: "SH",
     GHICHU: " ",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-204",
+    THONGTIN: " ",
   },
   {
     STT: 16,
     MAAC: "MS 201",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-201-S.jpg",
     KHUONAC: "S",
     KHUONKES6: "S",
     KHUONKES9: "S",
     GHICHU: "GRAPHITE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-201",
+    THONGTIN: " ",
   },
   {
     STT: 17,
@@ -198,8 +186,7 @@ export const data = [
     KHUONKES6: "T",
     KHUONKES9: "T",
     GHICHU: "METALLIC OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-2340",
+    THONGTIN: "Vân ngang nhỏ và nhuyễn uốn cong ( gợn sóng ), màu trắng nhạt",
   },
   {
     STT: 18,
@@ -208,8 +195,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-613-EV.jpg",
     KHUONAC: "EV",
     GHICHU: "NEO FINE WALNUT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-613",
+    THONGTIN: "Có vân núi dạng nửa dẹt và chạy dài, màu nâu",
   },
   {
     STT: 19,
@@ -220,8 +206,8 @@ export const data = [
     KHUONKES6: "MM",
     KHUONKES9: "MM",
     GHICHU: "MOLDAU ACASIA",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-503",
+    THONGTIN:
+      "Có mắt gỗ, vân núi dạng nửa, ít vân ngang nhỏ, cong, đường thể hiện vân màu trắng mờ và rộng hơn, nhìn giống các tấm verneer xếp chồng lên nhau thể hiện 1 đường verneer đều, rõ trên bề mặt ), màu vàng",
   },
   {
     STT: 20,
@@ -232,8 +218,7 @@ export const data = [
     KHUONKES6: "PL",
     KHUONKES9: "PL",
     GHICHU: "WYOMING MAPLE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-402",
+    THONGTIN: "Đường thể hiện vân gỗ màu trắng, vân núi dạng nửa, màu trắng",
   },
   {
     STT: 21,
@@ -244,8 +229,8 @@ export const data = [
     KHUONKES6: "MM",
     KHUONKES9: "MM",
     GHICHU: "TAKAJ LIME",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-411",
+    THONGTIN:
+      "Có nhiều vân núi không rời rạc, có những đường đen ngắn , màu vàng",
   },
   {
     STT: 22,
@@ -256,8 +241,7 @@ export const data = [
     KHUONKES6: "BT",
     KHUONKES9: "BT",
     GHICHU: "LIGHT LOFT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-431",
+    THONGTIN: " ",
   },
   {
     STT: 23,
@@ -268,8 +252,8 @@ export const data = [
     KHUONKES6: "PL",
     KHUONKES9: "PL",
     GHICHU: "WYOMING MAPLE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-403",
+    THONGTIN:
+      "Đường thể hiện vân gỗ màu trắng, vân núi dạng nửa, màu vàng trắng",
   },
   {
     STT: 24,
@@ -280,8 +264,7 @@ export const data = [
     KHUONKES6: "PL",
     KHUONKES9: "PL",
     GHICHU: "WYOMING MAPLE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-407",
+    THONGTIN: "Đường thể hiện vân gỗ màu trắng, vân núi dạng nửa, màu nâu tối",
   },
   {
     STT: 25,
@@ -292,20 +275,19 @@ export const data = [
     KHUONKES6: "RL",
     KHUONKES9: "RL",
     GHICHU: "RIVIERA OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-439",
+    THONGTIN:
+      "Có mắt gỗ, có đường đen chạy dài, có nhiều vết rạn giống phụ nữ sau sinh, bố cục mặt ván giống những tấm verneer ghép lại với nhau, màu nâu",
   },
   {
     STT: 26,
     MAAC: "MS 996",
-    NHOMGO: "VÂN VẢI",
+    NHOMGO: "VÂN VẢI-FABRIC",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-996-NV.jpg",
     KHUONAC: "NV",
     KHUONKES6: "NV",
     KHUONKES9: "NV",
     GHICHU: "FABRIC",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-996",
+    THONGTIN: " ",
   },
   {
     STT: 27,
@@ -316,8 +298,7 @@ export const data = [
     KHUONKES6: "EV",
     KHUONKES9: "EV",
     GHICHU: "BERGERAC OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-416",
+    THONGTIN: "Phân tầng theo 2 tông màu xẽ kẽ nhau, vân núi dạng nửa, màu nâu",
   },
   {
     STT: 28,
@@ -328,8 +309,8 @@ export const data = [
     KHUONKES6: "MM",
     KHUONKES9: "MM",
     GHICHU: "MOLDAU ACASIA",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-502",
+    THONGTIN:
+      "Có mắt gỗ, vân núi dạng nửa, ít vân ngang nhỏ, cong, đường thể hiện vân màu trắng mờ và rộng hơn, nhìn giống các tấm verneer xếp chồng lên nhau thể hiện 1 đường verneer đều, rõ trên bề mặt ), màu nâu",
   },
   {
     STT: 29,
@@ -340,8 +321,8 @@ export const data = [
     KHUONKES6: "WG",
     KHUONKES9: "WG",
     GHICHU: "CANADIAN WALNUT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-336",
+    THONGTIN:
+      "Có nhiều vân núi lớn trên bề mặt, vân núi và vân ngang xen kẽ ( vân ngang nhỏ ), màu nâu đỏ",
   },
   {
     STT: 30,
@@ -349,9 +330,8 @@ export const data = [
     NHOMGO: "OAK ",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-427-RL.jpg",
     KHUONAC: "RL",
-    GHICHU: "WOTAN OAK\nKHÔNG TRÙNG",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-427",
+    GHICHU: "WOTAN OAK, KHÔNG TRÙNG",
+    THONGTIN: " ",
   },
   {
     STT: 31,
@@ -360,18 +340,16 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-998-EL.jpg",
     KHUONAC: "EL",
     GHICHU: "FABRIC",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-998",
+    THONGTIN: " ",
   },
   {
     STT: 32,
     MAAC: "MS 103",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-103-MM.jpg",
     KHUONAC: "MM, SMM. T",
     GHICHU: "TRULY WHITE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-103",
+    THONGTIN: " ",
   },
   {
     STT: 33,
@@ -380,8 +358,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-202-MM.jpg",
     KHUONAC: "MM",
     GHICHU: "FOLKSTONE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-202",
+    THONGTIN: " ",
   },
   {
     STT: 34,
@@ -390,8 +367,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-445-RL.jpg",
     KHUONAC: "RL",
     GHICHU: "CANYON MONUMENT OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-445",
+    THONGTIN:
+      "Có mắt gỗ, nhìn giống như có vết nứt, vết cưa trên bề mặt, màu vàng",
   },
   {
     STT: 35,
@@ -400,8 +377,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-9223-NV.jpg",
     KHUONAC: "NV",
     GHICHU: "BANSTEAD OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-9223",
+    THONGTIN:
+      "Có nét vân ngang màu trắng hiện rõ trên bề mặt, có những vết rạn của phụ nữ sau sinh, có vân núi dạng nửa, màu vàng",
   },
   {
     STT: 36,
@@ -410,8 +387,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-440-NWG.jpg",
     KHUONAC: "NWG",
     GHICHU: "LYON WALNUT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-440",
+    THONGTIN:
+      "Có nhiều mắt gỗ to, trên bề mặt có 2 tông màu xen kẽ, có các đường nứt đen dài chạy qua mắt gỗ, các nét vân ngang uốn cong, màu nâu",
   },
   {
     STT: 37,
@@ -420,18 +397,16 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-436-SMM.jpg",
     KHUONAC: "SMM",
     GHICHU: "KITAMI RUESTER ELEGANT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-436",
+    THONGTIN: "Có những vân núi rời rạc, không có những đường đen, màu nâu",
   },
   {
     STT: 38,
     MAAC: "MS 025",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-025-MM.jpg",
     KHUONAC: "MM",
     GHICHU: " ",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-025",
+    THONGTIN: " ",
   },
   {
     STT: 39,
@@ -440,8 +415,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-610-RM.jpg",
     KHUONAC: "RM",
     GHICHU: "MASTER OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-610",
+    THONGTIN:
+      "Vân ngang nét nhỏ ( nhuyễn ), trên bề mặt ván có 2 tông màu sáng, tối xen kẽ nhau, màu vàng đậm",
   },
   {
     STT: 40,
@@ -450,8 +425,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-455-NWG.jpg",
     KHUONAC: "NWG",
     GHICHU: "SLEEK OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-455",
+    THONGTIN:
+      "Nhìn giống các tâm verneer xếp lên nhau đồng nhất, nhiều vân ngang dạng nhỏ, cong ( nhuyễn ), màu nâu đỏ",
   },
   {
     STT: 41,
@@ -460,8 +435,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-414-MM.jpg",
     KHUONAC: "MM",
     GHICHU: "TAKAJ LIME",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-414",
+    THONGTIN:
+      "Có nhiều vân núi không rời rạc, có những đường đen ngắn , màu nâu đỏ",
   },
   {
     STT: 42,
@@ -470,8 +445,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-609-EV.jpg",
     KHUONAC: "EV",
     GHICHU: "CARM ANIGRE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-609",
+    THONGTIN:
+      "Vân ngang nét nhỏ ( nhuyễn ), chung nhóm vân 610, 620, 626, 2340 ( 609 là màu tối nhất ), màu nâu đỏ",
   },
   {
     STT: 43,
@@ -480,8 +455,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-620-WN.jpg",
     KHUONAC: "WN",
     GHICHU: "VERTICAL OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-620",
+    THONGTIN: "Vân ngang nét nhỏ ( nhuyễn ), màu vàng nhạt",
   },
   {
     STT: 44,
@@ -490,18 +464,16 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-614-EV.jpg",
     KHUONAC: "EV",
     GHICHU: "ENGLISH WALNUT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-614",
+    THONGTIN: "Có đường vân đen chạy dài trên bề mặt , màu nâu tối",
   },
   {
     STT: 45,
     MAAC: "MS 200",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-200-T.jpg",
     KHUONAC: "T",
     GHICHU: "GOTHIC GRAY",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-200",
+    THONGTIN: " ",
   },
   {
     STT: 46,
@@ -510,8 +482,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-423-RM.jpg",
     KHUONAC: "RM",
     GHICHU: "COBURG OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-423",
+    THONGTIN: "Có nét vân ngang màu trắng hiện rõ trên bề mặt, màu đen",
   },
   {
     STT: 47,
@@ -520,8 +491,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-325-T.jpg",
     KHUONAC: "T",
     GHICHU: "MURNAU MAPLE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-325",
+    THONGTIN:
+      "Có vân núi, vân núi dạng nửa, có mắt gỗ , có củ tỏi ( bất quy tắc ), màu vàng hồng nhạt",
   },
   {
     STT: 48,
@@ -530,8 +501,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-412-MM.jpg",
     KHUONAC: "MM",
     GHICHU: "TAKAJ LIME",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-412",
+    THONGTIN:
+      "Có nhiều vân núi không rời rạc, có những đường đen ngắn , màu xám tro",
   },
   {
     STT: 49,
@@ -540,8 +511,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-444-RL.jpg",
     KHUONAC: "RL",
     GHICHU: "CANYON MONUMENT OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-444",
+    THONGTIN:
+      "Có mắt gỗ, nhìn giống như có vết nứt, vết cưa trên bề mặt, màu nâu",
   },
   {
     STT: 50,
@@ -550,8 +521,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-23015-T.jpg",
     KHUONAC: "T",
     GHICHU: "WYOMING MAPLE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-23015",
+    THONGTIN:
+      "Đường thể hiện vân gỗ có màu trắng, vân núi dạng nửa, màu xám xanh sáng",
   },
   {
     STT: 51,
@@ -560,8 +531,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-390-EV.jpg",
     KHUONAC: "EV",
     GHICHU: "LAREDO OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-390",
+    THONGTIN:
+      "Có nhiều vân dạng núi lớn trên bề mặt, vân núi và vân ngang xen kẽ ( vân ngang nhỏ và nhuyễn mã 329, 331 ), màu vàng, ",
   },
   {
     STT: 52,
@@ -570,8 +541,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-458-XM.jpg",
     KHUONAC: "XM",
     GHICHU: "OXID",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-458",
+    THONGTIN: " ",
   },
   {
     STT: 53,
@@ -580,18 +550,16 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-421-RM.jpg",
     KHUONAC: "RM",
     GHICHU: "COBURG OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-421",
+    THONGTIN: "Có nét vân ngang màu trắng hiện rõ trên bề mặt, màu xám",
   },
   {
     STT: 54,
     MAAC: "MS 203",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-203-T.jpg",
     KHUONAC: "T, SMM",
     GHICHU: "SARSEN",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-203",
+    THONGTIN: " ",
   },
   {
     STT: 55,
@@ -600,8 +568,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-329-EV.jpg",
     KHUONAC: "EV",
     GHICHU: "CO;ORED WALNUT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-329",
+    THONGTIN:
+      "Có nhiều vân núi lớn trên bề mặt, vân núi và vân ngang xen kẽ ( vân ngang lớn ), màu nâu đỏ đậm",
   },
   {
     STT: 56,
@@ -610,8 +578,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-332-RM.jpg",
     KHUONAC: "RM",
     GHICHU: "VIRGINA WALNUT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-332",
+    THONGTIN:
+      "Bề mặt gần tương đồng với mã 455 , có vân núi dạng nửa thể hiện rõ trên bề mặt, màu nâu vàng",
   },
   {
     STT: 57,
@@ -620,8 +588,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-410-MM.jpg",
     KHUONAC: "MM",
     GHICHU: "TAKAJ LIME",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-410",
+    THONGTIN:
+      "Có nhiều vân núi không rời rạc, có những đường đen ngắn , màu xám trắng",
   },
   {
     STT: 58,
@@ -630,8 +598,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-413-MM.jpg",
     KHUONAC: "MM",
     GHICHU: "TAKAJ LIME",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-413",
+    THONGTIN:
+      "Có nhiều vân núi không rời rạc, có những đường đen ngắn , màu xám ",
   },
   {
     STT: 59,
@@ -640,8 +608,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-428-RL.jpg",
     KHUONAC: "RL",
     GHICHU: "RIVERIA OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-428",
+    THONGTIN:
+      "Có mắt gỗ, có đường đen chạy dài, có nhiều vết rạn giống phụ nữ sau sinh, bố cục mặt ván giống những tấm verneer ghép lại với nhau, màu đen",
   },
   {
     STT: 60,
@@ -650,8 +618,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-437-SMM.jpg",
     KHUONAC: "SMM",
     GHICHU: "RIVERIA OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-437",
+    THONGTIN:
+      "Có mắt gỗ, có đường đen chạy dài, có nhiều vết rạn giống phụ nữ sau sinh, bố cục mặt ván giống những tấm verneer ghép lại với nhau, màu vàng nhạt",
   },
   {
     STT: 61,
@@ -660,8 +628,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-501-MM.jpg",
     KHUONAC: "MM",
     GHICHU: "MOUDAU  ACACIA",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-501",
+    THONGTIN:
+      "Có mắt gỗ, vân núi dạng nửa, ít vân ngang nhỏ, cong, đường thể hiện vân màu trắng mờ và rộng hơn, nhìn giống các tấm verneer xếp chồng lên nhau thể hiện 1 đường verneer đều, rõ trên bề mặt ), màu trắng",
   },
   {
     STT: 62,
@@ -670,18 +638,17 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-443-RL.jpg",
     KHUONAC: "RL",
     GHICHU: "CANYON MONUMENT OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-443",
+    THONGTIN:
+      "Có mắt gỗ, nhìn giống như có vết nứt, vết cưa trên bề mặt, màu trắng",
   },
   {
     STT: 63,
     MAAC: "MS 205",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-205-PL.jpg",
     KHUONAC: "PL",
     GHICHU: "FOLKSTONE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-205",
+    THONGTIN: " ",
   },
   {
     STT: 64,
@@ -690,8 +657,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-405-PL.jpg",
     KHUONAC: "PL",
     GHICHU: "WYOMING MAPLE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-405",
+    THONGTIN: "Đường thể hiện vân gỗ màu trắng, vân núi dạng nửa, màu nâu sáng",
   },
   {
     STT: 65,
@@ -700,8 +666,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-417-EV.jpg",
     KHUONAC: "EV",
     GHICHU: "BERGERAC OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-417",
+    THONGTIN: "Phân tầng theo 2 tông màu xẽ kẽ nhau, vân núi dạng nửa, màu xám",
   },
   {
     STT: 66,
@@ -710,18 +675,17 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-454-RL.jpg",
     KHUONAC: "RL",
     GHICHU: "COIMBRA ASH",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-454",
+    THONGTIN:
+      "Phân tầng theo 2 tông màu, có vân nhuyễn và vân núi dạng nửa xen kẽ với nhau ( gần giống 416, 417 ), màu xám trắng",
   },
   {
     STT: 67,
     MAAC: "MS 105",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-105-G.jpg",
     KHUONAC: "G",
     GHICHU: "PEARL WHITE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-105",
+    THONGTIN: " ",
   },
   {
     STT: 68,
@@ -730,8 +694,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-330-PL.jpg",
     KHUONAC: "PL",
     GHICHU: "AMBASSADOR",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-330",
+    THONGTIN:
+      "Có những đường vân ngang trắng, có nhiều mắt gỗ to và nhỏ, vân núi dạng nửa, màu nâu nhạt",
   },
   {
     STT: 69,
@@ -740,8 +704,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-626-EV.jpg",
     KHUONAC: "EV",
     GHICHU: "COLORADO OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-626",
+    THONGTIN:
+      "Vân ngang nét nhỏ ( nhuyễn ), có vân núi mờ giống hoa tay, màu vàng",
   },
   {
     STT: 70,
@@ -750,8 +714,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-430-BT.jpg",
     KHUONAC: "BT",
     GHICHU: "DARK LOFT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-430",
+    THONGTIN: " ",
   },
   {
     STT: 71,
@@ -760,18 +723,17 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-406-PL.jpg",
     KHUONAC: "PL",
     GHICHU: "WYOMING MAPLE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-406",
+    THONGTIN:
+      "Đường thể hiện vân gỗ màu trắng, vân núi dạng nửa, màu xám xanh tối",
   },
   {
     STT: 72,
     MAAC: "MS 106",
-    NHOMGO: "ĐƠN SẮC",
+    NHOMGO: "ĐƠN SẮC-SOLID",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-106-MM.jpg",
     KHUONAC: "MM",
     GHICHU: "WHITE",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-106",
+    THONGTIN: " ",
   },
   {
     STT: 73,
@@ -780,8 +742,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-341-T.jpg",
     KHUONAC: "T",
     GHICHU: "SALOP TEAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-341",
+    THONGTIN: " ",
   },
   {
     STT: 74,
@@ -790,8 +751,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-429-RL.jpg",
     KHUONAC: "RL",
     GHICHU: "COLMBIA WALNUT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-429",
+    THONGTIN: "Có mắt gỗ, có vân núi dạng nửa, màu xám trắng",
   },
   {
     STT: 75,
@@ -800,8 +760,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-518-MM.jpg",
     KHUONAC: "MM",
     GHICHU: "KILKENNY OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-518",
+    THONGTIN: " ",
   },
   {
     STT: 76,
@@ -810,8 +769,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-425-RL.jpg",
     KHUONAC: "RL",
     GHICHU: "RIVERIA OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-425",
+    THONGTIN:
+      "Có mắt gỗ, có đường đen chạy dài, có nhiều vết rạn giống phụ nữ sau sinh, bố cục mặt ván giống những tấm verneer ghép lại với nhau, màu vàng đậm",
   },
   {
     STT: 77,
@@ -820,8 +779,7 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-347-PL.jpg",
     KHUONAC: "PL",
     GHICHU: "LIFE OAK",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-347",
+    THONGTIN: " ",
   },
   {
     STT: 78,
@@ -830,8 +788,8 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-331-EV.jpg",
     KHUONAC: "EV",
     GHICHU: "NATURAL WALNAT",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-331",
+    THONGTIN:
+      "Có nhiều vân núi lớn trên bề mặt, vân núi và vân ngang xen kẽ ( vân ngang lớn ), màu nâu đỏ nhạt",
   },
   {
     STT: 79,
@@ -840,7 +798,6 @@ export const data = [
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-384-T.jpg",
     KHUONAC: "T",
     GHICHU: "OXFORD",
-    Column9: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---",
-    Column10: "MS-384",
+    THONGTIN: "MÀU XOAN ĐÀO",
   },
 ];

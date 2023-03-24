@@ -10,7 +10,67 @@ import {
 const tabs = [
   { name: "Tìm mẫu", href: "#", icon: UserIcon, current: true },
   {
-    name: "Danh sách mẫu",
+    name: "Tất cả mẫu",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "ĐƠN SẮC",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "OAK",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "WALNUT",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "ASH",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "CHERRY",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "MAPLE",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "TEAK",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "OTHER",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "FABRIC",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "CONCRETE",
     href: "#",
     icon: BuildingOfficeIcon,
     current: false,
@@ -19,6 +79,7 @@ const tabs = [
 import { useState } from "react";
 import { SearchMaMelamin } from "../components/search/SearchMaMelamin";
 import { ListMelamine } from "./ListMelamine";
+import List from "./List";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -28,7 +89,7 @@ const page = () => {
   return (
     <div className="container mx-auto mt-4">
       <div className="border border-gray-300 p-4">
-        <div className="flex space-x-8">
+        <div className="flex space-x-6 overflow-x-auto scrollbar-hide">
           {tabs.map((tab, index) => (
             <p
               key={tab.name}
@@ -50,7 +111,7 @@ const page = () => {
                 )}
                 aria-hidden="true"
               />
-              <span>{tab.name}</span>
+              <span className="whitespace-nowrap">{tab.name}</span>
             </p>
           ))}
         </div>
@@ -60,6 +121,36 @@ const page = () => {
         <div className={`${tabNo == 0 ? "block" : "hidden"} py-4`}>
           <SearchMaMelamin data={data}></SearchMaMelamin>
         </div>
+        <div className={`${tabNo == 2 ? "block" : "hidden"} py-4`}>
+          <List keyword="SOLID"></List>
+        </div>
+        <div className={`${tabNo == 3 ? "block" : "hidden"} py-4`}>
+          <List keyword="OAK"></List>
+        </div>
+        <div className={`${tabNo == 4 ? "block" : "hidden"} py-4`}>
+          <List keyword="WALNUT"></List>
+        </div>{" "}
+        <div className={`${tabNo == 5 ? "block" : "hidden"} py-4`}>
+          <List keyword="ASH"></List>
+        </div>{" "}
+        <div className={`${tabNo == 6 ? "block" : "hidden"} py-4`}>
+          <List keyword="CHERRY"></List>
+        </div>{" "}
+        <div className={`${tabNo == 7 ? "block" : "hidden"} py-4`}>
+          <List keyword="MAPLE"></List>
+        </div>{" "}
+        <div className={`${tabNo == 8 ? "block" : "hidden"} py-4`}>
+          <List keyword="TEAK"></List>
+        </div>{" "}
+        <div className={`${tabNo == 9 ? "block" : "hidden"} py-4`}>
+          <List keyword="OTHER"></List>
+        </div>{" "}
+        <div className={`${tabNo == 10 ? "block" : "hidden"} py-4`}>
+          <List keyword="FABRIC"></List>
+        </div>{" "}
+        <div className={`${tabNo == 11 ? "block" : "hidden"} py-4`}>
+          <List keyword="CONCRETE"></List>
+        </div>{" "}
       </div>
     </div>
   );
