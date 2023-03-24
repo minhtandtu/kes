@@ -235,7 +235,7 @@ export const data = [
   {
     STT: 22,
     MAAC: "MS 431",
-    NHOMGO: "VÂN ĐÁ, BÊ TÔNG",
+    NHOMGO: "VÂN ĐÁ, BÊ TÔNG-CONCRETE",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-431-BT.jpg",
     KHUONAC: "BT",
     KHUONKES6: "BT",
@@ -354,7 +354,7 @@ export const data = [
   {
     STT: 33,
     MAAC: "MS 202",
-    NHOMGO: "VÂN ĐÁ, BÊ TÔNG",
+    NHOMGO: "VÂN ĐÁ, BÊ TÔNG-CONCRETE",
     ANH: "https://ancuong.com/pictures/catalog/products/5000x2500-l/MFC---MS-202-MM.jpg",
     KHUONAC: "MM",
     GHICHU: "FOLKSTONE",

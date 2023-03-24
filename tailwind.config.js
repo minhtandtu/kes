@@ -10,6 +10,20 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    animation: {
+      bounceRight: "bounceRight 2s ease-in-out infinite",
+      bounceLeft: "bounceLeft 2s ease-in-out infinite",
+    },
+    keyframes: {
+      bounceRight: {
+        "0%": { transform: "translateX(0%)", opacity: "0%" },
+        "100%": { transform: "translateX(150%)", opacity: "100%" },
+      },
+      bounceLeft: {
+        "0%": { transform: "translateX(0%)", opacity: "0%" },
+        "100%": { transform: "translateX(-150%)", opacity: "100%" },
+      },
+    },
   },
   plugins: [
     require("tailwind-scrollbar-hide"),

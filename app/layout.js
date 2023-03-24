@@ -10,10 +10,14 @@ import Footer from "./components/Footer";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={monteserrat.className}>
-        <Header></Header>
-        {children}
-        <Footer></Footer>
+      <body className={`${monteserrat.className} flex min-h-screen flex-col`}>
+        <div className=" sticky top-0 z-10 bg-white shadow-xl">
+          <Header></Header>
+        </div>
+        <div className="">{children}</div>
+        <div className="mt-auto">
+          <Footer></Footer>
+        </div>
       </body>
     </html>
   );

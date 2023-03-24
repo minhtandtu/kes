@@ -125,11 +125,12 @@ function classNames(...classes) {
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+
   return (
-    <div className="container  mx-auto  ">
+    <div className="">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
+        <Dialog as="div" className="relative lg:hidden" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -238,31 +239,14 @@ const Header = () => {
                   ))}
                 </div>
 
-                <div className="space-y-6 border-t border-gray-200 py-6 px-4">
-                  <div className="flow-root">
-                    <a
-                      href="#"
-                      className="-m-2 block p-2 font-medium text-gray-900"
-                    >
-                      Create an account
-                    </a>
-                  </div>
-                  <div className="flow-root">
-                    <a
-                      href="#"
-                      className="-m-2 block p-2 font-medium text-gray-900"
-                    >
-                      Sign in
-                    </a>
-                  </div>
-                </div>
+                <div className="space-y-6 border-t border-gray-200 py-6 px-4"></div>
                 <div className="space-y-6 border-t border-gray-200 py-6 px-4"></div>
               </Dialog.Panel>
             </Transition.Child>
           </div>
         </Dialog>
       </Transition.Root>
-      <header className="relative border-b border-gray-300 pb-2 md:pb-4">
+      <header className="container relative mx-auto ">
         <nav aria-label="Top">
           {/* Top navigation */}
 

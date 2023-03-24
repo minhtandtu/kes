@@ -7,10 +7,25 @@ import {
   UserIcon,
   UsersIcon,
 } from "@heroicons/react/20/solid";
+
+import { useState } from "react";
+import { SearchMaMelamin } from "../components/search/SearchMaMelamin";
+import { ListMelamine } from "./ListMelamine";
+import List from "./List";
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  MagnifyingGlassCircleIcon,
+} from "@heroicons/react/24/outline";
 const tabs = [
-  { name: "Tìm mẫu", href: "#", icon: UserIcon, current: true },
   {
-    name: "Tất cả mẫu",
+    name: "TÌM MẪU",
+    href: "#",
+    icon: MagnifyingGlassCircleIcon,
+    current: true,
+  },
+  {
+    name: "TẤT CẢ",
     href: "#",
     icon: BuildingOfficeIcon,
     current: false,
@@ -76,11 +91,6 @@ const tabs = [
     current: false,
   },
 ];
-import { useState } from "react";
-import { SearchMaMelamin } from "../components/search/SearchMaMelamin";
-import { ListMelamine } from "./ListMelamine";
-import List from "./List";
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -114,6 +124,11 @@ const page = () => {
               <span className="whitespace-nowrap">{tab.name}</span>
             </p>
           ))}
+        </div>
+        <div className="animate-pulse flex justify-center border-b border-gray-300 font-semibold">
+          <ArrowLeftIcon className="w-5  animate-bounceLeft text-gray-700"></ArrowLeftIcon>
+          sweap
+          <ArrowRightIcon className="w-5 animate-bounceRight text-gray-700 "></ArrowRightIcon>
         </div>
         <div className={`${tabNo == 1 ? "block" : "hidden"} `}>
           <ListMelamine data={data} />
