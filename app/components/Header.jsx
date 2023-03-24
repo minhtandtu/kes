@@ -256,21 +256,15 @@ const Header = () => {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex h-16 items-center justify-between">
                 {/* Logo (lg+) */}
-                <div className=" lg:flex lg:flex-1 lg:items-center">
-                  <Image
-                    src="/images/vanmelamin.jpg"
-                    width={400}
-                    height={100}
-                    className="h-16 object-cover"
-                  ></Image>
-                  {/* <a href="/">
-                    <span className="sr-only">KES Wood Furniture</span>
-                    <img
-                      className="h-16 w-auto"
+                <div className="hidden lg:flex lg:flex-1 lg:items-center">
+                  <a href="/">
+                    <Image
                       src="/images/logo.png"
-                      alt=""
-                    />
-                  </a> */}
+                      width={200}
+                      height={100}
+                      className="h-16 object-cover"
+                    ></Image>
+                  </a>
                 </div>
 
                 <div className="hidden h-full lg:flex">
@@ -413,7 +407,12 @@ const Header = () => {
                 {/* Logo (lg-) */}
                 <a href="/" className="lg:hidden">
                   <span className="sr-only">Your Company</span>
-                  <img src="/images/logo.png" alt="" className="h-8 w-auto" />
+                  <Image
+                    src="/images/logo.png"
+                    width={100}
+                    height={50}
+                    className="h-10 object-cover"
+                  ></Image>
                 </a>
 
                 <div className="flex flex-1 items-center justify-end ">
