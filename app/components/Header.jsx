@@ -259,7 +259,7 @@ const Header = () => {
                 <div className="hidden lg:flex lg:flex-1 lg:items-center">
                   <a href="/">
                     <Image
-                      src="/images/logo.png"
+                      src="/images/logo2.jpg"
                       width={200}
                       height={100}
                       className="h-16 object-cover"
@@ -408,7 +408,7 @@ const Header = () => {
                 <a href="/" className="lg:hidden">
                   <span className="sr-only">Your Company</span>
                   <Image
-                    src="/images/logo.png"
+                    src="/images/logo2.jpg"
                     width={100}
                     height={50}
                     className="h-10 object-cover"
