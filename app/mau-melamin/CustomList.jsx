@@ -2,9 +2,14 @@
 import React from "react";
 import SearchImage from "../components/search/SearchImage";
 import { useState, useEffect } from "react";
-export const ListMelamine = ({ data, listofitems }) => {
-  function handleOnclick(item) {
-    if (listofitems) listofitems(item);
+export const CustomList = ({ data, deleteItem }) => {
+  // function handleOnclickDelete(id) {
+  //   console.log(id);
+  //   const newValue = newdata.filter((item) => item.STT !== id);
+  //   console.log(newValue);
+  // }
+  function handleOnclickDelete(STT) {
+    deleteItem(STT);
   }
   return (
     <div>
@@ -46,10 +51,10 @@ export const ListMelamine = ({ data, listofitems }) => {
                   {item.THONGTIN}
                 </p>
                 <div
-                  onClick={() => handleOnclick(item)}
+                  onClick={() => handleOnclickDelete(item.STT)}
                   className="cursor-pointer rounded-md bg-green-200 p-2 text-center text-gray-800 shadow ring-gray-400 transition duration-100 hover:bg-green-100  active:ring-1"
                 >
-                  <p>Thêm vào DS TỰ CHỌN</p>
+                  <p>Xóa</p>
                 </div>
               </div>
             </div>

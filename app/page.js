@@ -11,13 +11,13 @@ import Sliders from "./components/sliders/Sliders";
 export default function Home() {
   return (
     <main>
-      {/* <Categories></Categories> */}
-      {/* <Partners></Partners>
+      {/* <Categories></Categories>
+      <Partners></Partners>
       <Phoicanh></Phoicanh>
       <Products></Products>
       <Phoicanhlon></Phoicanhlon>
-      <Baogia></Baogia>
-      <Sliders></Sliders> */}
+      <Sliders></Sliders>
+      <Baogia></Baogia> */}
     </main>
   );
 }

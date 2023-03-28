@@ -8,15 +8,15 @@ import {
   UsersIcon,
 } from "@heroicons/react/20/solid";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SearchMaMelamin } from "../components/search/SearchMaMelamin";
 import { ListMelamine } from "./ListMelamine";
-import List from "./List";
 import {
   ArrowLeftIcon,
   ArrowRightIcon,
   MagnifyingGlassCircleIcon,
 } from "@heroicons/react/24/outline";
+import { CustomList } from "./CustomList";
 const tabs = [
   {
     name: "TÌM MẪU",
@@ -26,6 +26,12 @@ const tabs = [
   },
   {
     name: "TẤT CẢ",
+    href: "#",
+    icon: BuildingOfficeIcon,
+    current: false,
+  },
+  {
+    name: "DS TỰ CHỌN",
     href: "#",
     icon: BuildingOfficeIcon,
     current: false,
@@ -94,12 +100,40 @@ const tabs = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
+
 const page = () => {
   const [tabNo, settabNo] = useState(0);
+  const [listitem, setListitem] = useState([]);
+  function HandleDeleteItem(STT) {
+    console.log("Delete item: ", STT);
+    const newValue = listitem.filter((item) => item.STT !== STT);
+    localStorage.setItem("itemsAdded", JSON.stringify(newValue));
+    setListitem(newValue);
+  }
+
+  useEffect(() => {
+    const localData = JSON.parse(localStorage.getItem("itemsAdded")) || [];
+    setListitem(localData);
+  }, []);
+  function Handlelist(item) {
+    console.log("item: ", item);
+    const giatri = listitem.find((itm) => {
+      return itm.STT == item.STT;
+    });
+    if (!giatri) {
+      listitem.push(item);
+      localStorage.setItem("itemsAdded", JSON.stringify(listitem));
+    }
+  }
+  function HandleKeyword(keyword) {
+    const result = data.filter((item) => item.NHOMGO.includes(keyword));
+    return result;
+  }
+
   return (
     <div className="container mx-auto mt-4 max-w-7xl">
       <div className="border border-gray-300 p-4">
-        <div className="flex space-x-6 overflow-x-auto scrollbar-hide">
+        <div className="sticky top-0 z-10 flex space-x-6 overflow-x-auto bg-white px-4 py-1 scrollbar-hide">
           {tabs.map((tab, index) => (
             <p
               key={tab.name}
@@ -130,41 +164,68 @@ const page = () => {
           sweap
           <ArrowRightIcon className="w-5 animate-bounceRight text-gray-700 "></ArrowRightIcon>
         </div>
-        <div className={`${tabNo == 1 ? "block" : "hidden"} `}>
-          <ListMelamine data={data} />
-        </div>
         <div className={`${tabNo == 0 ? "block" : "hidden"} py-4`}>
           <SearchMaMelamin data={data}></SearchMaMelamin>
         </div>
-        <div className={`${tabNo == 2 ? "block" : "hidden"} py-4`}>
-          <List keyword="SOLID"></List>
+        <div className={`${tabNo == 1 ? "block" : "hidden"} `}>
+          <ListMelamine data={data} listofitems={Handlelist} />
+        </div>
+        <div className={`${tabNo == 2 ? "block" : "hidden"} `}>
+          <CustomList
+            data={listitem}
+            deleteItem={HandleDeleteItem}
+          ></CustomList>
         </div>
         <div className={`${tabNo == 3 ? "block" : "hidden"} py-4`}>
-          <List keyword="OAK"></List>
+          <ListMelamine
+            data={HandleKeyword("SOLID")}
+            listofitems={Handlelist}
+          />
         </div>
         <div className={`${tabNo == 4 ? "block" : "hidden"} py-4`}>
-          <List keyword="WALNUT"></List>
-        </div>{" "}
+          <ListMelamine data={HandleKeyword("OAK")} listofitems={Handlelist} />
+        </div>
         <div className={`${tabNo == 5 ? "block" : "hidden"} py-4`}>
-          <List keyword="ASH"></List>
+          <ListMelamine
+            data={HandleKeyword("WALNUT")}
+            listofitems={Handlelist}
+          />
         </div>{" "}
         <div className={`${tabNo == 6 ? "block" : "hidden"} py-4`}>
-          <List keyword="CHERRY"></List>
+          <ListMelamine data={HandleKeyword("ASH")} listofitems={Handlelist} />
         </div>{" "}
         <div className={`${tabNo == 7 ? "block" : "hidden"} py-4`}>
-          <List keyword="MAPLE"></List>
+          <ListMelamine
+            data={HandleKeyword("CHERRY")}
+            listofitems={Handlelist}
+          />
         </div>{" "}
         <div className={`${tabNo == 8 ? "block" : "hidden"} py-4`}>
-          <List keyword="TEAK"></List>
+          <ListMelamine
+            data={HandleKeyword("MAPLE")}
+            listofitems={Handlelist}
+          />
         </div>{" "}
         <div className={`${tabNo == 9 ? "block" : "hidden"} py-4`}>
-          <List keyword="OTHER"></List>
+          <ListMelamine data={HandleKeyword("TEAK")} listofitems={Handlelist} />
         </div>{" "}
         <div className={`${tabNo == 10 ? "block" : "hidden"} py-4`}>
-          <List keyword="FABRIC"></List>
+          <ListMelamine
+            data={HandleKeyword("OTHER")}
+            listofitems={Handlelist}
+          />
         </div>{" "}
         <div className={`${tabNo == 11 ? "block" : "hidden"} py-4`}>
-          <List keyword="CONCRETE"></List>
+          <ListMelamine
+            data={HandleKeyword("FABRIC")}
+            listofitems={Handlelist}
+          />
+        </div>{" "}
+        <div className={`${tabNo == 12 ? "block" : "hidden"} py-4`}>
+          <ListMelamine
+            data={HandleKeyword("CONCRETE")}
+            listofitems={Handlelist}
+          />
         </div>{" "}
       </div>
     </div>

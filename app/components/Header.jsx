@@ -263,6 +263,7 @@ const Header = () => {
                       width={200}
                       height={100}
                       className="h-16 object-cover"
+                      alt="alt"
                     ></Image>
                   </a>
                 </div>
@@ -412,6 +413,7 @@ const Header = () => {
                     width={100}
                     height={50}
                     className="h-10 object-cover"
+                    alt="alt"
                   ></Image>
                 </a>
 

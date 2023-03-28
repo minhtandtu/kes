@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${monteserrat.className} flex min-h-screen flex-col`}>
-        <div className=" sticky top-0 z-10 bg-white shadow-xl">
+        <div className="">
           <Header></Header>
         </div>
         <div className="">{children}</div>

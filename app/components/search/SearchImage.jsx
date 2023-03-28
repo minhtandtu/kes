@@ -6,7 +6,9 @@ const SearchImage = ({ imageUrl, index }) => {
   const [isFull, setIsFull] = useState(false);
   return (
     <div
-      className={`${isFull ? " fixed inset-0 p-4 " : " "}  bg-gray-700/70 p-0 `}
+      className={`${
+        isFull ? " fixed inset-0 z-20 p-4 " : " "
+      }  bg-gray-700/70 p-0 `}
     >
       <Image
         src={imageUrl}
@@ -14,7 +16,7 @@ const SearchImage = ({ imageUrl, index }) => {
         width={5000}
         height={2500}
         className={`${
-          isFull ? "z-50 h-full w-full " : " "
+          isFull ? " h-full w-full " : " "
         } cursor-pointer object-cover   `}
         onClick={() => setIsFull(!isFull)}
       ></Image>
