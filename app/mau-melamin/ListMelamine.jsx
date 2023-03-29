@@ -3,13 +3,25 @@ import React from "react";
 import SearchImage from "../components/search/SearchImage";
 import { useState, useEffect } from "react";
 export const ListMelamine = ({ data, listofitems }) => {
+  const [newData, SetNewData] = useState([...data]);
+
   function handleOnclick(item) {
     if (listofitems) listofitems(item);
+  }
+  function HandleRandom() {
+    const danhSachMoi = [...newData.sort(() => Math.random() - 0.5)];
+    SetNewData(danhSachMoi);
   }
   return (
     <div>
       <p className="mt-4">Kết quả:</p>
-      {data.map((item, index) => {
+      <div
+        onClick={HandleRandom}
+        className="cursor-pointer rounded-md bg-green-200 p-2 text-center text-gray-800 shadow ring-gray-400 hover:bg-green-100 active:bg-white  active:ring-1"
+      >
+        <p>Sắp xếp DS ngẫu nhiên</p>
+      </div>
+      {newData.map((item, index) => {
         return (
           <div
             key={index}

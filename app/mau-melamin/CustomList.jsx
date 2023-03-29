@@ -2,18 +2,26 @@
 import React from "react";
 import SearchImage from "../components/search/SearchImage";
 import { useState, useEffect } from "react";
-export const CustomList = ({ data, deleteItem }) => {
-  // function handleOnclickDelete(id) {
-  //   console.log(id);
-  //   const newValue = newdata.filter((item) => item.STT !== id);
-  //   console.log(newValue);
-  // }
+export const CustomList = ({ data, deleteItem, resortdata }) => {
+  const [newData, SetNewData] = useState([...data]);
+  function HandleRandom() {
+    resortdata();
+  }
+
   function handleOnclickDelete(STT) {
     deleteItem(STT);
   }
+
   return (
     <div>
       <p className="mt-4">Kết quả:</p>
+      <div
+        onClick={HandleRandom}
+        className="cursor-pointer rounded-md bg-green-200 p-2 text-center text-gray-800 shadow ring-gray-400 hover:bg-green-100 active:bg-white  active:ring-1"
+      >
+        <p>Sắp xếp DS ngẫu nhiên</p>
+      </div>
+
       {data.map((item, index) => {
         return (
           <div

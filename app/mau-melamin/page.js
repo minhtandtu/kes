@@ -129,6 +129,10 @@ const page = () => {
     const result = data.filter((item) => item.NHOMGO.includes(keyword));
     return result;
   }
+  function HandleResortData() {
+    const danhSachMoi = [...listitem.sort(() => Math.random() - 0.5)];
+    setListitem(danhSachMoi);
+  }
 
   return (
     <div className="container mx-auto mt-4 max-w-7xl">
@@ -174,6 +178,7 @@ const page = () => {
           <CustomList
             data={listitem}
             deleteItem={HandleDeleteItem}
+            resortdata={HandleResortData}
           ></CustomList>
         </div>
         <div className={`${tabNo == 3 ? "block" : "hidden"} py-4`}>
