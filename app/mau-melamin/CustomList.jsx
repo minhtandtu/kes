@@ -2,8 +2,23 @@
 import React from "react";
 import SearchImage from "../components/search/SearchImage";
 import { useState, useEffect } from "react";
+import Test from "./Test";
 export const CustomList = ({ data, deleteItem, resortdata }) => {
   const [newData, SetNewData] = useState([...data]);
+  const [randomnumber, setRamdomNumber] = useState(0);
+  const [dongmo, setDongMo] = useState(false);
+
+  function handleOnclick(item) {
+    if (listofitems) listofitems(item);
+  }
+
+  function DoanMa() {
+    const randomIndex = Math.floor(Math.random() * data.length);
+    setRamdomNumber(randomIndex);
+  }
+  function MoDoanMa() {
+    setDongMo(!dongmo);
+  }
   function HandleRandom() {
     resortdata();
   }
@@ -15,12 +30,29 @@ export const CustomList = ({ data, deleteItem, resortdata }) => {
   return (
     <div>
       <p className="mt-4">Kết quả:</p>
-      <div
-        onClick={HandleRandom}
-        className="cursor-pointer rounded-md bg-green-200 p-2 text-center text-gray-800 shadow ring-gray-400 hover:bg-green-100 active:bg-white  active:ring-1"
-      >
-        <p>Sắp xếp DS ngẫu nhiên</p>
+      <div className="flex w-full">
+        <div
+          onClick={HandleRandom}
+          className="w-1/2 cursor-pointer rounded-md bg-green-200 p-2 text-center text-gray-800 shadow ring-gray-400 hover:bg-green-100 active:bg-white  active:ring-1"
+        >
+          <p>Sắp xếp DS ngẫu nhiên</p>
+        </div>
+        <div
+          onClick={MoDoanMa}
+          className="w-1/2  cursor-pointer rounded-md bg-red-200 p-2 text-center text-gray-800 shadow ring-gray-400 hover:bg-green-100 active:bg-white  active:ring-1"
+        >
+          <p>Đoán Mẫu</p>
+        </div>
       </div>
+      {dongmo && (
+        <div className="bg-gray-200 p-1 md:p-4">
+          <Test
+            imageUrl={data[randomnumber].ANH}
+            maac={data[randomnumber].MAAC}
+            callNextImage={DoanMa}
+          ></Test>
+        </div>
+      )}
 
       {data.map((item, index) => {
         return (

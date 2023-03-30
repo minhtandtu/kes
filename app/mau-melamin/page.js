@@ -169,7 +169,11 @@ const page = () => {
           <ArrowRightIcon className="w-5 animate-bounceRight text-gray-700 "></ArrowRightIcon>
         </div>
         <div className={`${tabNo == 0 ? "block" : "hidden"} py-4`}>
-          <SearchMaMelamin data={data}></SearchMaMelamin>
+          <SearchMaMelamin
+            data={data}
+            // listofitems={Handlelist}
+            addItemToPage={Handlelist}
+          ></SearchMaMelamin>
         </div>
         <div className={`${tabNo == 1 ? "block" : "hidden"} `}>
           <ListMelamine data={data} listofitems={Handlelist} />

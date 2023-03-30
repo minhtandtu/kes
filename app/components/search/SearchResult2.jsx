@@ -1,19 +1,26 @@
-import {
-  ArrowsPointingInIcon,
-  ArrowsPointingOutIcon,
-} from "@heroicons/react/24/outline";
-import Image from "next/image";
+"use client";
 import React from "react";
 import { useState } from "react";
 import SearchImage from "./SearchImage";
-
-export const SearchResult2 = ({ searchResult }) => {
-  const [idxFull, setIdxFull] = useState();
-
+export const SearchResult2 = ({ data, addItemToStorage }) => {
+  function handleAddItemToLocalStorage(item) {
+    // const localStore = JSON.parse(localStorage.getItem("itemsAdded"));
+    // console.log("localStore: ", localStore);
+    // if (localStore) {
+    //   const giatri = localStore.find((itm) => {
+    //     return itm.STT == item.STT;
+    //   });
+    //   if (!giatri) {
+    //     localStore.push(item);
+    //     localStorage.setItem("itemsAdded", JSON.stringify(localStore));
+    //   }
+    // }
+    addItemToStorage(item);
+  }
   return (
     <div>
       <p className="mt-4">Kết quả:</p>
-      {searchResult.map((item, index) => {
+      {data.map((item, index) => {
         return (
           <div
             key={index}
@@ -50,12 +57,17 @@ export const SearchResult2 = ({ searchResult }) => {
                   {item.THONGTIN}
                 </p>
               </div>
+              <div
+                onClick={() => handleAddItemToLocalStorage(item)}
+                className="mr-2 cursor-pointer rounded-md bg-green-200 p-2 text-center text-gray-800 shadow ring-gray-400 transition duration-100 hover:bg-green-100  active:ring-1"
+              >
+                <p>Thêm vào DS TỰ CHỌN</p>
+              </div>
             </div>
             <SearchImage imageUrl={item.ANH}></SearchImage>
           </div>
         );
       })}
-      {/* <SearchImage></SearchImage> */}
     </div>
   );
 };

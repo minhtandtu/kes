@@ -3,15 +3,21 @@ import { ListMelamine } from "@/app/mau-melamin/ListMelamine";
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { SearchResult2 } from "./SearchResult2";
-export const SearchMaMelamin = ({ data }) => {
+export const SearchMaMelamin = ({ data, addItemToPage }) => {
   const firstInputRef = useRef(null);
   const [inputValue, setInputValue] = useState("");
   const [searchResult, setSearchResult] = useState([]);
+  console.log("input: ", inputValue);
+
   function handleChange(event) {
     setInputValue(event.target.value); // update the input value in state
   }
   function handleSubmit(event) {
     event.preventDefault(); // prevent the default form submission behavior
+  }
+  function HandleAddItemToStorage(item) {
+    console.log("Item in SearchMelamin: ", item);
+    addItemToPage(item);
   }
 
   useEffect(() => {
@@ -50,7 +56,12 @@ export const SearchMaMelamin = ({ data }) => {
           />
         </div>
       </form>
-      {inputValue && <SearchResult2 data={searchResult}></SearchResult2>}
+      {inputValue && (
+        <SearchResult2
+          data={searchResult}
+          addItemToStorage={HandleAddItemToStorage}
+        ></SearchResult2>
+      )}
     </div>
   );
 };
