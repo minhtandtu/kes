@@ -7,7 +7,6 @@ export const SearchMaMelamin = ({ data, addItemToPage }) => {
   const firstInputRef = useRef(null);
   const [inputValue, setInputValue] = useState("");
   const [searchResult, setSearchResult] = useState([]);
-  console.log("input: ", inputValue);
 
   function handleChange(event) {
     setInputValue(event.target.value); // update the input value in state
@@ -16,7 +15,6 @@ export const SearchMaMelamin = ({ data, addItemToPage }) => {
     event.preventDefault(); // prevent the default form submission behavior
   }
   function HandleAddItemToStorage(item) {
-    console.log("Item in SearchMelamin: ", item);
     addItemToPage(item);
   }
 

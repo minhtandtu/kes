@@ -56,12 +56,12 @@ export const SearchResult2 = ({ data, addItemToStorage }) => {
                 <p className=" border-b border-gray-300 font-medium text-gray-800">
                   {item.THONGTIN}
                 </p>
-              </div>
-              <div
-                onClick={() => handleAddItemToLocalStorage(item)}
-                className="mr-2 cursor-pointer rounded-md bg-green-200 p-2 text-center text-gray-800 shadow ring-gray-400 transition duration-100 hover:bg-green-100  active:ring-1"
-              >
-                <p>Thêm vào DS TỰ CHỌN</p>
+                <div
+                  onClick={() => handleAddItemToLocalStorage(item)}
+                  className="mr-2 cursor-pointer rounded-md bg-green-200 p-2 text-center text-gray-800 shadow ring-gray-400 transition duration-100 hover:bg-green-100  active:ring-1"
+                >
+                  <p>Thêm vào DS TỰ CHỌN</p>
+                </div>
               </div>
             </div>
             <SearchImage imageUrl={item.ANH}></SearchImage>

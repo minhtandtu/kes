@@ -105,7 +105,6 @@ const page = () => {
   const [tabNo, settabNo] = useState(0);
   const [listitem, setListitem] = useState([]);
   function HandleDeleteItem(STT) {
-    console.log("Delete item: ", STT);
     const newValue = listitem.filter((item) => item.STT !== STT);
     localStorage.setItem("itemsAdded", JSON.stringify(newValue));
     setListitem(newValue);
@@ -116,7 +115,6 @@ const page = () => {
     setListitem(localData);
   }, []);
   function Handlelist(item) {
-    console.log("item: ", item);
     const giatri = listitem.find((itm) => {
       return itm.STT == item.STT;
     });
